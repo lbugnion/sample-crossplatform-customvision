@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:CustomVisionClient"
+             x:Class="CustomVisionClient.MainPage">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <Label x:Name="ResultLabel"
+               HorizontalOptions="Center"
+               VerticalTextAlignment="Center"
+               FontSize="50"
+               Margin="10"
+               Text="Welcome" />
+
+        <Image x:Name="DisplayImage"
+               VerticalOptions="Fill"
+               HorizontalOptions="Fill"
+               Grid.Row="1" />
+
+        <Button x:Name="GoButton"
+                Grid.Row="2"
+                HeightRequest="70"
+                Text="Take a picture" />
+    </Grid>    
+</ContentPage>
