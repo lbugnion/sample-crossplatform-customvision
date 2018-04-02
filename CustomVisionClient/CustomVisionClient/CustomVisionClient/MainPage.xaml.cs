@@ -11,15 +11,15 @@ using Xamarin.Forms;
 namespace CustomVisionClient
 {
     public partial class MainPage : ContentPage
-	{
+    {
         private PredictionEndpoint _endpoint = new PredictionEndpoint
         {
             ApiKey = App.PredictionKey
         };
 
         public MainPage()
-		{
-			InitializeComponent();
+        {
+            InitializeComponent();
 
             GoButton.Clicked += async (s, e) =>
             {
@@ -58,6 +58,17 @@ namespace CustomVisionClient
                     DeletePhoto(file);
                 });
             };
+        }
+
+        private void DeletePhoto(MediaFile file)
+        {
+            var path = file?.Path;
+
+            if (!string.IsNullOrEmpty(path)
+                && File.Exists(path))
+            {
+                File.Delete(file?.Path);
+            }
         }
 
         private string RecognizePicture(MediaFile file)
@@ -104,17 +115,6 @@ namespace CustomVisionClient
             }
 
             return message;
-        }
-
-        private void DeletePhoto(MediaFile file)
-        {
-            var path = file?.Path;
-
-            if (!string.IsNullOrEmpty(path) 
-                && File.Exists(path))
-            {
-                File.Delete(file?.Path);
-            }
         }
     }
 }
