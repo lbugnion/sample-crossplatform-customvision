@@ -55,20 +55,9 @@ namespace CustomVisionClient
                 Device.BeginInvokeOnMainThread(() =>
                 {
                     ResultLabel.Text = RecognizePicture(file);
-                    DeletePhoto(file);
+                    DisplayImage.Source = ImageSource.FromFile(file.Path);
                 });
             };
-        }
-
-        private void DeletePhoto(MediaFile file)
-        {
-            var path = file?.Path;
-
-            if (!string.IsNullOrEmpty(path)
-                && File.Exists(path))
-            {
-                File.Delete(file?.Path);
-            }
         }
 
         private string RecognizePicture(MediaFile file)
@@ -105,8 +94,6 @@ namespace CustomVisionClient
                                 + $"({tag.Tag}, {tag.Probability:P1})";
                         }
                     }
-
-                    DisplayImage.Source = ImageSource.FromFile(file.Path);
                 }
             }
             catch (Exception ex)

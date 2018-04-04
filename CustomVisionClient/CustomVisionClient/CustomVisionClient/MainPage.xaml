@@ -14,9 +14,15 @@
         <Label x:Name="ResultLabel"
                HorizontalOptions="Center"
                VerticalTextAlignment="Center"
-               FontSize="50"
-               Margin="10"
-               Text="Welcome" />
+               Margin="10,20,10,10"
+               Text="Welcome">
+            <Label.FontSize>
+                <OnPlatform x:TypeArguments="x:Double"
+                            iOS="30"
+                            Android="50"
+                            WinPhone="30" />
+            </Label.FontSize>
+        </Label>
 
         <Image x:Name="DisplayImage"
                VerticalOptions="Fill"
