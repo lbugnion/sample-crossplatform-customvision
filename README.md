@@ -10,11 +10,11 @@ This repository contains a Xamarin.Forms client configured with the following fe
 
 ## Documentation:
 
-- [Creating and configuring the Custom Vision service](./Doc/ConfiguringVision.md)
+- Creating and configuring the Custom Vision service (Work in progress)
 
-- [Taking a picture with the Xamarin.Forms client](TODO)
+- Taking a picture with the Xamarin.Forms client (Work in progress)
 
-- [Sending the picture to the Custom Vision service and showing the result](TODO)
+- Sending the picture to the Custom Vision service and showing the result (Work in progress)
 
 ## More information
 
