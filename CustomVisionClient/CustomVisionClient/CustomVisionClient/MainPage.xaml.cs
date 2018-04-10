@@ -12,10 +12,7 @@ namespace CustomVisionClient
 {
     public partial class MainPage : ContentPage
     {
-        private PredictionEndpoint _endpoint = new PredictionEndpoint
-        {
-            ApiKey = App.PredictionKey
-        };
+        private PredictionEndpoint _endpoint;
 
         public MainPage()
         {
@@ -23,6 +20,24 @@ namespace CustomVisionClient
 
             GoButton.Clicked += async (s, e) =>
             {
+                if (string.IsNullOrEmpty(App.PredictionKey)
+                    || string.IsNullOrEmpty(App.ProjectId))
+                {
+                    await DisplayAlert(
+                        "Set the values first",
+                        "You must set the values in the Settings page first",
+                        "OK");
+                    return;
+                }
+
+                if (_endpoint == null)
+                {
+                    _endpoint = new PredictionEndpoint
+                    {
+                        ApiKey = App.PredictionKey
+                    };
+                }
+
                 ResultLabel.Text = "Please wait...";
                 DisplayImage.Source = null;
 
@@ -57,6 +72,11 @@ namespace CustomVisionClient
                     ResultLabel.Text = RecognizePicture(file);
                     DisplayImage.Source = ImageSource.FromFile(file.Path);
                 });
+            };
+
+            SettingsButton.Clicked += (s, e) =>
+            {
+                Navigation.PushAsync(new SettingsPage());
             };
         }
 

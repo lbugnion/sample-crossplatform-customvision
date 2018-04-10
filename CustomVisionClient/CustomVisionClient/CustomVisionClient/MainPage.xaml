@@ -2,6 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:CustomVisionClient"
+             Title="Recognize"
              x:Class="CustomVisionClient.MainPage">
 
     <Grid>
@@ -28,6 +29,12 @@
                VerticalOptions="Fill"
                HorizontalOptions="Fill"
                Grid.Row="1" />
+
+        <Button x:Name="SettingsButton"
+                Grid.Row="1"
+                Text="Settings"
+                VerticalOptions="End"
+                HorizontalOptions="End" />
 
         <Button x:Name="GoButton"
                 Grid.Row="2"

@@ -1,17 +1,30 @@
-﻿using Xamarin.Forms;
+﻿using Plugin.Settings;
+using Plugin.Settings.Abstractions;
+using Xamarin.Forms;
 
 namespace CustomVisionClient
 {
     public partial class App : Application
     {
-        public const string PredictionKey = "PREDICTIONKEY";
-        public const string ProjectId = "PROJECTID";
+        private static ISettings AppSettings => CrossSettings.Current;
+
+        public static string PredictionKey
+        {
+            get => AppSettings.GetValueOrDefault(nameof(PredictionKey), string.Empty);
+            set => AppSettings.AddOrUpdateValue(nameof(PredictionKey), value);
+        }
+
+        public static string ProjectId
+        {
+            get => AppSettings.GetValueOrDefault(nameof(ProjectId), string.Empty);
+            set => AppSettings.AddOrUpdateValue(nameof(ProjectId), value);
+        }
 
         public App()
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new NavigationPage(new MainPage());
         }
 
         protected override void OnResume()
