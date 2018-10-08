@@ -1,7 +1,10 @@
 ﻿using Plugin.Settings;
 using Plugin.Settings.Abstractions;
+using System;
 using Xamarin.Forms;
+using Xamarin.Forms.Xaml;
 
+[assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace CustomVisionClient
 {
     public partial class App : Application
@@ -27,9 +30,9 @@ namespace CustomVisionClient
             MainPage = new NavigationPage(new MainPage());
         }
 
-        protected override void OnResume()
+        protected override void OnStart()
         {
-            // Handle when your app resumes
+            // Handle when your app starts
         }
 
         protected override void OnSleep()
@@ -37,9 +40,9 @@ namespace CustomVisionClient
             // Handle when your app sleeps
         }
 
-        protected override void OnStart()
+        protected override void OnResume()
         {
-            // Handle when your app starts
+            // Handle when your app resumes
         }
     }
 }
