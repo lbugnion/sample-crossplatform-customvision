@@ -147,7 +147,7 @@
       <Version>1.2.0</Version>
     </PackageReference>
     <PackageReference Include="Microsoft.Rest.ClientRuntime">
-      <Version>2.3.14</Version>
+      <Version>2.3.18</Version>
     </PackageReference>
     <PackageReference Include="Plugin.Permissions">
       <Version>4.0.1-beta</Version>
@@ -158,8 +158,8 @@
     <PackageReference Include="Xam.Plugins.Settings">
       <Version>4.0.0.10-beta</Version>
     </PackageReference>
-    <PackageReference Include="Xamarin.Forms" Version="3.1.0.697729" />
-    <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform" Version="6.1.5" />
+    <PackageReference Include="Xamarin.Forms" Version="3.4.0.1008975" />
+    <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform" Version="6.2.2" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CustomVisionClient\CustomVisionClient.csproj">
