@@ -12,8 +12,6 @@ namespace CustomVisionClient
 {
     public partial class MainPage : ContentPage
     {
-        private PredictionEndpoint _endpoint;
-
         public MainPage()
         {
             InitializeComponent();
