@@ -11,8 +11,8 @@ namespace CustomVisionClient
     {
         private static ISettings AppSettings => CrossSettings.Current;
 
-        public const string PredictionKey = "726e925bfa0b49a8afadf9307809ec7f";
-        public static string ProjectId = "bbd446b4-57ee-4a2e-8de0-793f1b154544";
+        public const string PredictionKey = "PREDICTIONKEY";
+        public static string ProjectId = "PROJECTID";
 
         public App()
         {
