@@ -9,10 +9,25 @@ namespace CustomVisionClient
 {
     public partial class App : Application
     {
-        private static ISettings AppSettings => CrossSettings.Current;
-
         public const string PredictionKey = "PREDICTIONKEY";
-        public static string ProjectId = "PROJECTID";
+        public const string ProjectId = "PROJECTID";
+        public const string PublishedName = "PUBLISHEDNAME";
+        public const string Endpoint = "ENDPOINT";
+        
+        public static Guid ProjectGuid
+        {
+            get
+            {
+                var id = ProjectId;
+
+                if (string.IsNullOrEmpty(id))
+                {
+                    return Guid.Empty;
+                }
+
+                return Guid.Parse(id);
+            }
+        }
 
         public App()
         {

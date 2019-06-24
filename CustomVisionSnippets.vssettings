@@ -1,15 +1,25 @@
-<UserSettings><ApplicationIdentity version="15.0"/><ToolsOptions/><Category name="Environment_Group" RegisteredName="Environment_Group"><Category name="Environment_Toolbox" Category="{481999F2-7479-4e03-83D5-BE808BA142DF}" Package="{DA9FB551-C724-11d0-AE1F-00A0C90FFFC3}" RegisteredName="Environment_Toolbox" PackageName="Visual Studio Environment Package"><PropertyValue name="ShowAllTabs">false</PropertyValue><PropertyValue name="Version">1</PropertyValue><PropertyValue name="DeletedTabCount">0</PropertyValue><PropertyValue name="Tab0.Name">Windows &amp; Bars</PropertyValue><PropertyValue name="Tab0.View">0</PropertyValue><PropertyValue name="Tab0.UseDefaultName">true</PropertyValue><PropertyValue name="Tab0.RecordType">1</PropertyValue><PropertyValue name="Tab0.Position">19</PropertyValue><PropertyValue name="Tab1.Name">Gesture Recognizers</PropertyValue><PropertyValue name="Tab1.View">0</PropertyValue><PropertyValue name="Tab1.UseDefaultName">true</PropertyValue><PropertyValue name="Tab1.RecordType">1</PropertyValue><PropertyValue name="Tab1.Position">20</PropertyValue><PropertyValue name="Tab2.Name">Data Views</PropertyValue><PropertyValue name="Tab2.View">0</PropertyValue><PropertyValue name="Tab2.UseDefaultName">true</PropertyValue><PropertyValue name="Tab2.RecordType">1</PropertyValue><PropertyValue name="Tab2.Position">21</PropertyValue><PropertyValue name="Tab3.Name">Controls</PropertyValue><PropertyValue name="Tab3.View">0</PropertyValue><PropertyValue name="Tab3.UseDefaultName">true</PropertyValue><PropertyValue name="Tab3.RecordType">1</PropertyValue><PropertyValue name="Tab3.Position">22</PropertyValue><PropertyValue name="Tab4.Name">Controllers &amp; Objects</PropertyValue><PropertyValue name="Tab4.View">0</PropertyValue><PropertyValue name="Tab4.UseDefaultName">true</PropertyValue><PropertyValue name="Tab4.RecordType">1</PropertyValue><PropertyValue name="Tab4.Position">23</PropertyValue><PropertyValue name="Tab5.ID">{e7f851c8-6267-4794-b0fe-7bcab6dacbb4}-#1071</PropertyValue><PropertyValue name="Tab5.Name">Standard</PropertyValue><PropertyValue name="Tab5.View">0</PropertyValue><PropertyValue name="Tab5.UseDefaultName">true</PropertyValue><PropertyValue name="Tab5.RecordType">4</PropertyValue><PropertyValue name="Tab5.Position">24</PropertyValue><PropertyValue name="TabCount">6</PropertyValue><PropertyValue name="DeletedItemCount">0</PropertyValue><PropertyValue name="Item0.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue><PropertyValue name="Item0.ID">EF9FF13E6AFEBD2A649B5A8B6BE0FAD7</PropertyValue><PropertyValue name="Item0.Name">-- VISION --</PropertyValue><PropertyValue name="Item0.UseDefaultName">true</PropertyValue><PropertyValue name="Item0.Tab">General</PropertyValue><PropertyValue name="Item0.TabID">General</PropertyValue><PropertyValue name="Item0.OriginalTabID">General</PropertyValue><PropertyValue name="Item0.OriginalTab">General</PropertyValue><PropertyValue name="Item0.RecordType">1</PropertyValue><PropertyValue name="Item0.Data">        private const string Url = "https://lbcalculator.azurewebsites.net/api/add/num1/{num1}/num2/{num2}";
+<UserSettings><ApplicationIdentity version="16.0"/><ToolsOptions/><Category name="Environment_Group" RegisteredName="Environment_Group"><Category name="Environment_Toolbox" Category="{481999F2-7479-4e03-83D5-BE808BA142DF}" Package="{DA9FB551-C724-11d0-AE1F-00A0C90FFFC3}" RegisteredName="Environment_Toolbox" PackageName="Visual Studio Environment Package"><PropertyValue name="ShowAllTabs">false</PropertyValue><PropertyValue name="Version">1</PropertyValue><PropertyValue name="DeletedTabCount">0</PropertyValue><PropertyValue name="Tab0.Name">Windows &amp; Bars</PropertyValue><PropertyValue name="Tab0.View">0</PropertyValue><PropertyValue name="Tab0.UseDefaultName">true</PropertyValue><PropertyValue name="Tab0.RecordType">1</PropertyValue><PropertyValue name="Tab0.Position">19</PropertyValue><PropertyValue name="Tab1.Name">Gesture Recognizers</PropertyValue><PropertyValue name="Tab1.View">0</PropertyValue><PropertyValue name="Tab1.UseDefaultName">true</PropertyValue><PropertyValue name="Tab1.RecordType">1</PropertyValue><PropertyValue name="Tab1.Position">20</PropertyValue><PropertyValue name="Tab2.Name">Data Views</PropertyValue><PropertyValue name="Tab2.View">0</PropertyValue><PropertyValue name="Tab2.UseDefaultName">true</PropertyValue><PropertyValue name="Tab2.RecordType">1</PropertyValue><PropertyValue name="Tab2.Position">21</PropertyValue><PropertyValue name="Tab3.Name">Controls</PropertyValue><PropertyValue name="Tab3.View">0</PropertyValue><PropertyValue name="Tab3.UseDefaultName">true</PropertyValue><PropertyValue name="Tab3.RecordType">1</PropertyValue><PropertyValue name="Tab3.Position">22</PropertyValue><PropertyValue name="Tab4.Name">Controllers &amp; Objects</PropertyValue><PropertyValue name="Tab4.View">0</PropertyValue><PropertyValue name="Tab4.UseDefaultName">true</PropertyValue><PropertyValue name="Tab4.RecordType">1</PropertyValue><PropertyValue name="Tab4.Position">23</PropertyValue><PropertyValue name="Tab5.ID">{e7f851c8-6267-4794-b0fe-7bcab6dacbb4}-#1071</PropertyValue><PropertyValue name="Tab5.Name">Standard</PropertyValue><PropertyValue name="Tab5.View">0</PropertyValue><PropertyValue name="Tab5.UseDefaultName">true</PropertyValue><PropertyValue name="Tab5.RecordType">4</PropertyValue><PropertyValue name="Tab5.Position">24</PropertyValue><PropertyValue name="TabCount">6</PropertyValue><PropertyValue name="DeletedItemCount">0</PropertyValue><PropertyValue name="Item0.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue><PropertyValue name="Item0.ID">8F55968A09FE1045EECA05EE1DB68316</PropertyValue><PropertyValue name="Item0.Name">_endpoint</PropertyValue><PropertyValue name="Item0.UseDefaultName">true</PropertyValue><PropertyValue name="Item0.Tab">General</PropertyValue><PropertyValue name="Item0.TabID">General</PropertyValue><PropertyValue name="Item0.OriginalTabID">General</PropertyValue><PropertyValue name="Item0.OriginalTab">General</PropertyValue><PropertyValue name="Item0.RecordType">1</PropertyValue><PropertyValue name="Item0.Data">        private CustomVisionPredictionClient _endpoint;
 
-</PropertyValue><PropertyValue name="Item0.Position">1</PropertyValue><PropertyValue name="Item1.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue><PropertyValue name="Item1.ID">58D627B689FB9005C005FCBDDC196B23</PropertyValue><PropertyValue name="Item1.Name">_endpoint</PropertyValue><PropertyValue name="Item1.UseDefaultName">true</PropertyValue><PropertyValue name="Item1.Tab">General</PropertyValue><PropertyValue name="Item1.TabID">General</PropertyValue><PropertyValue name="Item1.OriginalTabID">General</PropertyValue><PropertyValue name="Item1.OriginalTab">General</PropertyValue><PropertyValue name="Item1.RecordType">1</PropertyValue><PropertyValue name="Item1.Data">        private PredictionEndpoint _endpoint;
-
-</PropertyValue><PropertyValue name="Item1.Position">2</PropertyValue><PropertyValue name="Item2.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue><PropertyValue name="Item2.ID">FF46CBFBD7C0BE69AC9DBF0DFBAB2D2A</PropertyValue><PropertyValue name="Item2.Name">-&gt; Clicked 1</PropertyValue><PropertyValue name="Item2.UseDefaultName">true</PropertyValue><PropertyValue name="Item2.Tab">General</PropertyValue><PropertyValue name="Item2.TabID">General</PropertyValue><PropertyValue name="Item2.OriginalTabID">General</PropertyValue><PropertyValue name="Item2.OriginalTab">General</PropertyValue><PropertyValue name="Item2.RecordType">1</PropertyValue><PropertyValue name="Item2.Data">                if (_endpoint == null)
+</PropertyValue><PropertyValue name="Item0.Position">1</PropertyValue><PropertyValue name="Item1.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue><PropertyValue name="Item1.ID">738E36F29A58046567C35BEDA4EB824C</PropertyValue><PropertyValue name="Item1.Name">-&gt; Clicked 1</PropertyValue><PropertyValue name="Item1.UseDefaultName">true</PropertyValue><PropertyValue name="Item1.Tab">General</PropertyValue><PropertyValue name="Item1.TabID">General</PropertyValue><PropertyValue name="Item1.OriginalTabID">General</PropertyValue><PropertyValue name="Item1.OriginalTab">General</PropertyValue><PropertyValue name="Item1.RecordType">1</PropertyValue><PropertyValue name="Item1.Data">                if (string.IsNullOrEmpty(App.PredictionKey)
+                    || string.IsNullOrEmpty(App.ProjectId))
                 {
-                    _endpoint = new PredictionEndpoint
+                    await DisplayAlert(
+                        "Set the values first",
+                        "You must set the values in the Settings page first",
+                        "OK");
+                    return;
+                }
+
+                if (_endpoint == null)
+                {
+                    _endpoint = new CustomVisionPredictionClient
                     {
-                        ApiKey = App.PredictionKey
+                        ApiKey = App.PredictionKey,
+                        Endpoint = App.Endpoint
                     };
                 }
-</PropertyValue><PropertyValue name="Item2.Position">3</PropertyValue><PropertyValue name="Item3.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue><PropertyValue name="Item3.ID">E8D787496F805403B7C16C4F86D65B18</PropertyValue><PropertyValue name="Item3.Name">-&gt; Clicked 2</PropertyValue><PropertyValue name="Item3.UseDefaultName">true</PropertyValue><PropertyValue name="Item3.Tab">General</PropertyValue><PropertyValue name="Item3.TabID">General</PropertyValue><PropertyValue name="Item3.OriginalTabID">General</PropertyValue><PropertyValue name="Item3.OriginalTab">General</PropertyValue><PropertyValue name="Item3.RecordType">1</PropertyValue><PropertyValue name="Item3.Data">
+
+</PropertyValue><PropertyValue name="Item1.Position">2</PropertyValue><PropertyValue name="Item2.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue><PropertyValue name="Item2.ID">E8D787496F805403B7C16C4F86D65B18</PropertyValue><PropertyValue name="Item2.Name">-&gt; Clicked 2</PropertyValue><PropertyValue name="Item2.UseDefaultName">true</PropertyValue><PropertyValue name="Item2.Tab">General</PropertyValue><PropertyValue name="Item2.TabID">General</PropertyValue><PropertyValue name="Item2.OriginalTabID">General</PropertyValue><PropertyValue name="Item2.OriginalTab">General</PropertyValue><PropertyValue name="Item2.RecordType">1</PropertyValue><PropertyValue name="Item2.Data">
                 ResultLabel.Text = "Please wait...";
                 DisplayImage.Source = null;
 
@@ -24,7 +34,7 @@
                         "OK");
                     return;
                 }
-</PropertyValue><PropertyValue name="Item3.Position">4</PropertyValue><PropertyValue name="Item4.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue><PropertyValue name="Item4.ID">A471A404129AAFFAC6B822C6F97CE344</PropertyValue><PropertyValue name="Item4.Name">-&gt; Clicked 3</PropertyValue><PropertyValue name="Item4.UseDefaultName">true</PropertyValue><PropertyValue name="Item4.Tab">General</PropertyValue><PropertyValue name="Item4.TabID">General</PropertyValue><PropertyValue name="Item4.OriginalTabID">General</PropertyValue><PropertyValue name="Item4.OriginalTab">General</PropertyValue><PropertyValue name="Item4.RecordType">1</PropertyValue><PropertyValue name="Item4.Data">
+</PropertyValue><PropertyValue name="Item2.Position">3</PropertyValue><PropertyValue name="Item3.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue><PropertyValue name="Item3.ID">A471A404129AAFFAC6B822C6F97CE344</PropertyValue><PropertyValue name="Item3.Name">-&gt; Clicked 3</PropertyValue><PropertyValue name="Item3.UseDefaultName">true</PropertyValue><PropertyValue name="Item3.Tab">General</PropertyValue><PropertyValue name="Item3.TabID">General</PropertyValue><PropertyValue name="Item3.OriginalTabID">General</PropertyValue><PropertyValue name="Item3.OriginalTab">General</PropertyValue><PropertyValue name="Item3.RecordType">1</PropertyValue><PropertyValue name="Item3.Data">
                 var file = await CrossMedia.Current.TakePhotoAsync(
                     new StoreCameraMediaOptions
                     {
@@ -36,47 +46,29 @@
                 {
                     return;
                 }
-</PropertyValue><PropertyValue name="Item4.Position">5</PropertyValue><PropertyValue name="Item5.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue><PropertyValue name="Item5.ID">2E2D961A024D346A242CD862640F34A6</PropertyValue><PropertyValue name="Item5.Name">-&gt; Clicked 4</PropertyValue><PropertyValue name="Item5.UseDefaultName">true</PropertyValue><PropertyValue name="Item5.Tab">General</PropertyValue><PropertyValue name="Item5.TabID">General</PropertyValue><PropertyValue name="Item5.OriginalTabID">General</PropertyValue><PropertyValue name="Item5.OriginalTab">General</PropertyValue><PropertyValue name="Item5.RecordType">1</PropertyValue><PropertyValue name="Item5.Data">
+</PropertyValue><PropertyValue name="Item3.Position">4</PropertyValue><PropertyValue name="Item4.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue><PropertyValue name="Item4.ID">ED1784ADF81FFB861D4D21F7109D0F74</PropertyValue><PropertyValue name="Item4.Name">-&gt; Clicked 4</PropertyValue><PropertyValue name="Item4.UseDefaultName">false</PropertyValue><PropertyValue name="Item4.Tab">General</PropertyValue><PropertyValue name="Item4.TabID">General</PropertyValue><PropertyValue name="Item4.OriginalTabID">General</PropertyValue><PropertyValue name="Item4.OriginalTab">General</PropertyValue><PropertyValue name="Item4.RecordType">1</PropertyValue><PropertyValue name="Item4.Data">
                 // Give the device some time to come back to the UI
                 // before starting recognition
-                Device.BeginInvokeOnMainThread(() =&gt;
+                Device.BeginInvokeOnMainThread(async () =&gt;
                 {
-                    ResultLabel.Text = RecognizePicture(file);
+                    ResultLabel.Text = await RecognizePicture(file);
                     DisplayImage.Source = ImageSource.FromFile(file.Path);
                 });
-</PropertyValue><PropertyValue name="Item5.Position">6</PropertyValue><PropertyValue name="Item6.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue><PropertyValue name="Item6.ID">15803997D7623B735F06857ACE4CD7B2</PropertyValue><PropertyValue name="Item6.Name">RecognizePicture</PropertyValue><PropertyValue name="Item6.UseDefaultName">true</PropertyValue><PropertyValue name="Item6.Tab">General</PropertyValue><PropertyValue name="Item6.TabID">General</PropertyValue><PropertyValue name="Item6.OriginalTabID">General</PropertyValue><PropertyValue name="Item6.OriginalTab">General</PropertyValue><PropertyValue name="Item6.RecordType">1</PropertyValue><PropertyValue name="Item6.Data">
-        private string RecognizePicture(MediaFile file)
-        {
-            var message = "Nothing recognized...";
-
-            try
-            {
-                if (file != null)
-                {
-                }
-            }
-            catch (Exception ex)
-            {
-                message = ex.Message;
-            }
-
-            return message;
-        }
-</PropertyValue><PropertyValue name="Item6.Position">7</PropertyValue><PropertyValue name="Item7.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue><PropertyValue name="Item7.ID">192233787E81AA25DAB9C236F23E1141</PropertyValue><PropertyValue name="Item7.Name">-&gt; if</PropertyValue><PropertyValue name="Item7.UseDefaultName">true</PropertyValue><PropertyValue name="Item7.Tab">General</PropertyValue><PropertyValue name="Item7.TabID">General</PropertyValue><PropertyValue name="Item7.OriginalTabID">General</PropertyValue><PropertyValue name="Item7.OriginalTab">General</PropertyValue><PropertyValue name="Item7.RecordType">1</PropertyValue><PropertyValue name="Item7.Data">                    IEnumerable&lt;ImageTagPredictionModel&gt; tags = null;
+</PropertyValue><PropertyValue name="Item4.Position">5</PropertyValue><PropertyValue name="Item5.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue><PropertyValue name="Item5.ID">314754FF6D6B835AAF362BE7B3124B2D</PropertyValue><PropertyValue name="Item5.Name">-&gt; if 1</PropertyValue><PropertyValue name="Item5.UseDefaultName">false</PropertyValue><PropertyValue name="Item5.Tab">General</PropertyValue><PropertyValue name="Item5.TabID">General</PropertyValue><PropertyValue name="Item5.OriginalTabID">General</PropertyValue><PropertyValue name="Item5.OriginalTab">General</PropertyValue><PropertyValue name="Item5.RecordType">1</PropertyValue><PropertyValue name="Item5.Data">                    IEnumerable&lt;PredictionModel&gt; tags = null;
 
                     using (var stream = file.GetStream())
                     {
-                        tags = _endpoint.PredictImage(Guid.Parse(App.ProjectId), stream)
+                        tags = (await _endpoint.ClassifyImageAsync(App.ProjectGuid, App.PublishedName, stream))
                             .Predictions
                             .OrderByDescending(p =&gt; p.Probability);
                     }
-</PropertyValue><PropertyValue name="Item7.Position">8</PropertyValue><PropertyValue name="Item8.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue><PropertyValue name="Item8.ID">550FC68324535BF3DCAA35A6F7B11509</PropertyValue><PropertyValue name="Item8.Name">-&gt; if 2</PropertyValue><PropertyValue name="Item8.UseDefaultName">true</PropertyValue><PropertyValue name="Item8.Tab">General</PropertyValue><PropertyValue name="Item8.TabID">General</PropertyValue><PropertyValue name="Item8.OriginalTabID">General</PropertyValue><PropertyValue name="Item8.OriginalTab">General</PropertyValue><PropertyValue name="Item8.RecordType">1</PropertyValue><PropertyValue name="Item8.Data">
+</PropertyValue><PropertyValue name="Item5.Position">6</PropertyValue><PropertyValue name="Item6.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue><PropertyValue name="Item6.ID">02DF088F06785E7C2C062D4794F07BB6</PropertyValue><PropertyValue name="Item6.Name">-&gt; if 2</PropertyValue><PropertyValue name="Item6.UseDefaultName">true</PropertyValue><PropertyValue name="Item6.Tab">General</PropertyValue><PropertyValue name="Item6.TabID">General</PropertyValue><PropertyValue name="Item6.OriginalTabID">General</PropertyValue><PropertyValue name="Item6.OriginalTab">General</PropertyValue><PropertyValue name="Item6.RecordType">1</PropertyValue><PropertyValue name="Item6.Data">
                     var bestTag = tags
                         .FirstOrDefault(p =&gt; p.Probability &gt; 0.5);
 
                     if (bestTag != null)
                     {
-                        message = $"{bestTag.Tag} ({bestTag.Probability:P1})";
+                        message = $"{bestTag.TagName} ({bestTag.Probability:P1})";
                     }
                     else
                     {
@@ -85,7 +77,7 @@
                         foreach (var tag in tags)
                         {
                             message += Environment.NewLine
-                                + $"({tag.Tag}, {tag.Probability:P1})";
+                                + $"({tag.TagName}, {tag.Probability:P1})";
                         }
                     }
-</PropertyValue><PropertyValue name="Item8.Position">9</PropertyValue><PropertyValue name="ItemCount">9</PropertyValue></Category></Category></UserSettings>
+</PropertyValue><PropertyValue name="Item6.Position">7</PropertyValue><PropertyValue name="ItemCount">7</PropertyValue></Category></Category></UserSettings>
