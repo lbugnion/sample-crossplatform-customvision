@@ -1,12 +1,12 @@
-﻿using Plugin.Media;
+﻿using Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction;
+using Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models;
+using Plugin.Media;
 using Plugin.Media.Abstractions;
 using System;
 using System.Collections.Generic;
-using System.IO;
 using System.Linq;
+using System.Threading.Tasks;
 using Xamarin.Forms;
-using Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction;
-using Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models;
 
 namespace CustomVisionClient
 {
@@ -68,9 +68,9 @@ namespace CustomVisionClient
 
                 // Give the device some time to come back to the UI
                 // before starting recognition
-                Device.BeginInvokeOnMainThread(() =>
+                Device.BeginInvokeOnMainThread(async () =>
                 {
-                    ResultLabel.Text = RecognizePicture(file);
+                    ResultLabel.Text = await RecognizePicture(file);
                     DisplayImage.Source = ImageSource.FromFile(file.Path);
                 });
             };
@@ -81,7 +81,7 @@ namespace CustomVisionClient
             };
         }
 
-        private string RecognizePicture(MediaFile file)
+        private async Task<string> RecognizePicture(MediaFile file)
         {
             var message = "Nothing recognized...";
 
@@ -93,7 +93,7 @@ namespace CustomVisionClient
 
                     using (var stream = file.GetStream())
                     {
-                        tags = _endpoint.ClassifyImage(App.ProjectGuid, App.PublishedName, stream)
+                        tags = (await _endpoint.ClassifyImageAsync(App.ProjectGuid, App.PublishedName, stream))
                             .Predictions
                             .OrderByDescending(p => p.Probability);
                     }
