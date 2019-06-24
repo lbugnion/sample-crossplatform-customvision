@@ -23,6 +23,33 @@ namespace CustomVisionClient
             set => AppSettings.AddOrUpdateValue(nameof(ProjectId), value);
         }
 
+        public static string PublishedName
+        {
+            get => AppSettings.GetValueOrDefault(nameof(PublishedName), string.Empty);
+            set => AppSettings.AddOrUpdateValue(nameof(PublishedName), value);
+        }
+
+        public static string Endpoint
+        {
+            get => AppSettings.GetValueOrDefault(nameof(Endpoint), string.Empty);
+            set => AppSettings.AddOrUpdateValue(nameof(Endpoint), value);
+        }
+
+        public static Guid ProjectGuid
+        {
+            get
+            {
+                var id = ProjectId;
+
+                if (string.IsNullOrEmpty(id))
+                {
+                    return Guid.Empty;
+                }
+
+                return Guid.Parse(id);
+            }
+        }
+
         public App()
         {
             InitializeComponent();

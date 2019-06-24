@@ -29,6 +29,20 @@ namespace CustomVisionClient
             };
 
             ProjectIdEntry.Text = App.ProjectId;
+
+            PublishedNameEntry.TextChanged += (s, e) =>
+            {
+                App.PublishedName = ((Entry)s).Text;
+            };
+
+            PublishedNameEntry.Text = App.PublishedName;
+
+            EndpointEntry.TextChanged += (s, e) =>
+            {
+                App.Endpoint = ((Entry)s).Text;
+            };
+
+            EndpointEntry.Text = App.Endpoint;
         }
     }
 }

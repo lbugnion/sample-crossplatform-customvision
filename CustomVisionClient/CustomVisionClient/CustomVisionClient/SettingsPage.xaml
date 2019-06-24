@@ -16,6 +16,18 @@
 
             <Entry x:Name="ProjectIdEntry"
                    HorizontalOptions="Fill" />
+
+            <Label Text="Published Name"
+                   HorizontalOptions="Start" />
+
+            <Entry x:Name="PublishedNameEntry"
+                   HorizontalOptions="Fill" />
+
+            <Label Text="Endpoint"
+                   HorizontalOptions="Start" />
+
+            <Entry x:Name="EndpointEntry"
+                   HorizontalOptions="Fill" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

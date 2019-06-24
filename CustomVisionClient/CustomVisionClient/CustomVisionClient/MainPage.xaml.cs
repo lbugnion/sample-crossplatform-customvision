@@ -1,18 +1,18 @@
-﻿using Microsoft.Cognitive.CustomVision.Prediction;
-using Microsoft.Cognitive.CustomVision.Prediction.Models;
-using Plugin.Media;
+﻿using Plugin.Media;
 using Plugin.Media.Abstractions;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using Xamarin.Forms;
+using Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction;
+using Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models;
 
 namespace CustomVisionClient
 {
     public partial class MainPage : ContentPage
     {
-        private PredictionEndpoint _endpoint;
+        private CustomVisionPredictionClient _endpoint;
 
         public MainPage()
         {
@@ -32,9 +32,10 @@ namespace CustomVisionClient
 
                 if (_endpoint == null)
                 {
-                    _endpoint = new PredictionEndpoint
+                    _endpoint = new CustomVisionPredictionClient
                     {
-                        ApiKey = App.PredictionKey
+                        ApiKey = App.PredictionKey,
+                        Endpoint = App.Endpoint
                     };
                 }
 
@@ -88,11 +89,11 @@ namespace CustomVisionClient
             {
                 if (file != null)
                 {
-                    IEnumerable<ImageTagPredictionModel> tags = null;
+                    IEnumerable<PredictionModel> tags = null;
 
                     using (var stream = file.GetStream())
                     {
-                        tags = _endpoint.PredictImage(Guid.Parse(App.ProjectId), stream)
+                        tags = _endpoint.ClassifyImage(App.ProjectGuid, App.PublishedName, stream)
                             .Predictions
                             .OrderByDescending(p => p.Probability);
                     }
@@ -102,7 +103,7 @@ namespace CustomVisionClient
 
                     if (bestTag != null)
                     {
-                        message = $"{bestTag.Tag} ({bestTag.Probability:P1})";
+                        message = $"{bestTag.TagName} ({bestTag.Probability:P1})";
                     }
                     else
                     {
@@ -111,7 +112,7 @@ namespace CustomVisionClient
                         foreach (var tag in tags)
                         {
                             message += Environment.NewLine
-                                + $"({tag.Tag}, {tag.Probability:P1})";
+                                + $"({tag.TagName}, {tag.Probability:P1})";
                         }
                     }
                 }
