@@ -12,7 +12,7 @@ namespace CustomVisionClient
 {
     public partial class MainPage : ContentPage
     {
-        private CustomVisionPredictionClient _endpoint;
+        private CustomVisionPredictionClient _client;
 
         public MainPage()
         {
@@ -30,9 +30,9 @@ namespace CustomVisionClient
                     return;
                 }
 
-                if (_endpoint == null)
+                if (_client == null)
                 {
-                    _endpoint = new CustomVisionPredictionClient
+                    _client = new CustomVisionPredictionClient
                     {
                         ApiKey = App.PredictionKey,
                         Endpoint = App.Endpoint
@@ -93,7 +93,7 @@ namespace CustomVisionClient
 
                     using (var stream = file.GetStream())
                     {
-                        tags = (await _endpoint.ClassifyImageAsync(App.ProjectGuid, App.PublishedName, stream))
+                        tags = (await _client.ClassifyImageAsync(App.ProjectGuid, App.PublishedName, stream))
                             .Predictions
                             .OrderByDescending(p => p.Probability);
                     }
